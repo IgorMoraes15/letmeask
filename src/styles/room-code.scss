@@ -1,0 +1,62 @@
+.sign-off {
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #835adf;
+    cursor: pointer;
+    display: flex;
+
+    img {
+        width: 20px;
+    }
+
+    div {
+        height: 100%;
+        background: #8b0000;
+        padding: 0 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span {
+        display: block;
+        align-self: center;
+        flex: 1;
+        padding: 0 16px 0 12px;
+        width: 240px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.room-code {
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #835adf;
+    cursor: pointer;
+    display: flex;
+
+    div {
+        height: 100%;
+        background: #835adf;
+        padding: 0 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span {
+        display: block;
+        align-self: center;
+        flex: 1;
+        padding: 0 16px 0 12px;
+        width: 240px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

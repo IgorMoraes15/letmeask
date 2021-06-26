@@ -22,12 +22,15 @@ export function Home() {
 
     async function handleJoinRoom(event: FormEvent) {
         event.preventDefault()
-        console.log('roomCode', roomCode)
         if (roomCode.trim() === '') { return }
         const roomRef = await database.ref(`rooms/${roomCode}`).get()
-        console.log('roomRef', roomRef)
         if (!roomRef.exists()) {
             alert('Room does not exists.')
+            return;
+        }
+
+        if (roomRef.val().endedAt) {
+            alert('Room already closed.')
             return;
         }
         history.push(`/rooms/${roomCode}`)

@@ -40,7 +40,6 @@ export function RoomCode(props: RoomCodeProps) {
                     <div>
                         <img src={logoutImg} alt="Logout" />
                     </div>
-                    <span>Deslogar</span>
                 </button>
             ): null}
             <Toaster />

@@ -13,6 +13,15 @@
             > img {
                 max-height: 45px;
             }
+            
+            > div {
+                display: flex;
+                gap: 16px;
+
+                button {
+                    height: 40px;
+                }
+            }
         }
     }
 
@@ -90,11 +99,35 @@
                         text-decoration: underline;
                         font-size: 14px;
                         font-weight: 500;
-                        cursor: ZX;
+                        cursor: pointer;
                     }
                 }
 
 
+            }
+        }
+
+        .question-list {
+            margin-top: 32px;
+        }
+
+        .empty-questions {
+            flex: 8;
+            padding: 0 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 100px;
+
+            span {
+                margin-top: 24px;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                font: 700 20px 'Poppins', sans-serif;
             }
         }
     }
